@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML 5 Web Storage</title>
+<link href="styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+<div id="main">
+	<section id="userinput">
+		<div class="logo">
+			<div class="im">
+			<img src="images/Bakery_Logo_1.png" alt="Humm" width="140" ><img src="images/funnydonut.jpg" alt="Humm" width="135">
+			</div>
+		</div>
+	<form>
+		<br>
+		<fieldset>
+		  Customer Name:<br>
+		  <input class="input" id="customerName">
+		  <br>
+			<br>
+		  Flavor:<br>
+		  <input list="flavorList" id="flavor">
+		  	<datalist id="flavorList">
+		    <option value="Coconut">
+		    <option value="Blueberry Cake">
+		    <option value="Cream-Filled">
+		    <option value="Vanilla Frosting With Rainbow Sprinkles">
+		    <option value="Chocolate">
+		  </datalist>
+		  <br>
+		<br>
+
+			Quantity:<br>
+		  <input class="input" type="number" id="quantity" >
+		  <br>
+			<br>
+			Price:<br>
+			<input list="priceList" id="price">
+			  <datalist id="priceList">
+			  <option value="$5 for 2 donuts">
+			  <option value="$10 for 4 donts ">
+			  <option value="$20 for 10 donts">
+			  <option value="$30 for 20 donts">
+			  <option value="$50 for 40 donuts">
+			</datalist>
+		  <br>
+			<br>
+			<div class="im3">
+				<button id="button" value="button">Order Now</button>
+				</div>
+   			</fieldset>
+    </form>
+    </section>
+		<section id="useroutput">
+			<img class="image3" src="images/logo.png" alt="Humm"><br>
+	    </section>
+</div>
+<script src="webstorage.js"></script>
+</body>
+</html>
